@@ -5,7 +5,7 @@ The processed output can shift selected frequencies into a more audible range wi
 goal is an affordable, open-source platform that musicians can build to assist them with hearing impairments.
 
 # lumo teensy 4.1 plan
-
+'''text
 ┌──────────────────────────────────────────┐
 │              BRIDGE TONE                 │
 │                                          │
@@ -31,6 +31,7 @@ goal is an affordable, open-source platform that musicians can build to assist t
 │  │ [USB-C Power In] │                    │
 │  └──────────────────┘                    │
 └──────────────────────────────────────────┘
+'''
 
 # Parts list:
 ### board
