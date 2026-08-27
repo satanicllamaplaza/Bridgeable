@@ -34,21 +34,31 @@ goal is an affordable, open-source platform that musicians can build to assist t
 ```
 
 # Parts list:
-### board
+## Board
+- [Teensy Board](https://www.sparkfun.com/teensy-4-1-without-ethernet-headers.html)
+    - [IMX_RT1060_Processor_Reference_Manual.pdf](IMX_RT1060_Processor_Reference_Manual.pdf)
+    - [IMXRT1060CEC_Rev_4_Data_Sheet.pdf](IMXRT1060CEC_Rev_4_Data_Sheet.pdf)
+    - [W25Q64JV-DTR_Datasheet.pdf](W25Q64JV-DTR_Datasheet.pdf)
 
-https://www.sparkfun.com/teensy-4-1-without-ethernet-headers.html
+- [Teensy 4 Audio Shield Red D](https://www.sparkfun.com/teensy-4-audio-shield-rev-d.html)
+    - [SGTL5000_Low_Power_Stereo_Codec_with_Headphone_Amp_Data_Sheet.pdf](SGTL5000_Low_Power_Stereo_Codec_with_Headphone_Amp_Data_Sheet.pdf)
+    - [Teensy Audio Library Wiki](https://www.pjrc.com/teensy/td_libs_Audio.html)
+    - [Teensy Audio Library Github](https://github.com/PaulStoffregen/Audio)
 
-### audio hat
+- [Screen](https://www.sparkfun.com/color-320x240-touchscreen-2-8-inch-ili9341-controller.html)
+    - [Product Details](https://www.pjrc.com/store/display_ili9341_touch.html)
+    - [library for the Adafruit ILI9341 display products](https://github.com/PaulStoffregen/ILI9341_t3)
+    - [XPT2046 Touchscreen Arduino Library](https://github.com/PaulStoffregen/XPT2046_Touchscreen)
+        Note: We will mostlikely not use the touch screen ability
 
-https://www.sparkfun.com/teensy-4-audio-shield-rev-d.html
-
-### Screen
-
-https://www.sparkfun.com/color-320x240-touchscreen-2-8-inch-ili9341-controller.html
 
 ### pre amp
 
-https://www.amazon.com/Rakstore-Impedance-Preamplifier-Pre-Amplifier-Instrument/dp/B09FL6DXF8
+- [TL072 Op Amp High Impedance Preamplifier Preamp Pre-Amplifier Board for Guitar Instrument ](https://www.amazon.com/Rakstore-Impedance-Preamplifier-Pre-Amplifier-Instrument/dp/B09FL6DXF8)
+    This preamp requires 12v which exceeds our goal.
+    We can use this for test but
+    we will need to replace this part.
+
 
 other options suggested by DeepSeek:
 
@@ -82,7 +92,6 @@ We should probably have an on off switch.
 ## libraries
 
 - Teensy Audio Library
-- eez studio
 
 ## includes
 
@@ -102,21 +111,6 @@ We should probably have an on off switch.
 - sgtl5000_1.inputSelect(AUDIO_INPUT_LINEIN);: This tells the shield to use
     the line-in jack for input, which is what you'll use for the cello preamp.
     Other options include AUDIO_INPUT_MIC
-
-## The Visual Tool: Audio System Design Tool
-
-https://www.pjrc.com/teensy/gui/
-
-This is your secret weapon. Instead of writing complex signal routing code by hand,
-    you can use the Audio System Design Tool available on the PJRC website.
-
-    How it Works: It's a graphical interface where you drag and drop audio objects
-    (like AudioInputI2S for input, AudioMixer4 for mixing signals, AudioFilterBiquad
-    for filtering, and AudioOutputI2S for output) and connect them visually with "patch cords".
-
-    The Output: Once your design is complete, the tool generates a fully functional
-    block of C++ code with all the object declarations and AudioConnection patch cords
-    ready to be pasted into your Arduino sketch. This dramatically simplifies prototyping.
 
 ## Key Code Concepts to Know
 
@@ -147,3 +141,27 @@ When you start coding, these are the core building blocks you'll manipulate:
     Control and Status: The AudioControlSGTL5000 object controls the shield's hardware. You can
     also use AudioMemoryUsageMax() to check how much memory your audio processing uses and adjust the value in AudioMemory() accordingly.
 
+# TOOLS
+
+## Audio System Design Tool
+
+- [Audio System Design Tool for Teensy Audio Library](https://www.pjrc.com/teensy/gui/)
+
+This is your secret weapon. Instead of writing complex signal routing code by hand,
+    you can use the Audio System Design Tool available on the PJRC website.
+
+    How it Works: It's a graphical interface where you drag and drop audio objects
+    (like AudioInputI2S for input, AudioMixer4 for mixing signals, AudioFilterBiquad
+    for filtering, and AudioOutputI2S for output) and connect them visually with "patch cords".
+
+    The Output: Once your design is complete, the tool generates a fully functional
+    block of C++ code with all the object declarations and AudioConnection patch cords
+    ready to be pasted into your Arduino sketch. This dramatically simplifies prototyping.
+
+## EEZ Studio
+
+- [EEZ Studio Website](https://www.envox.eu/studio/studio-introduction/)
+- [EEZ Studio documentation](https://www.envox.eu/eez-studio-docs/)
+
+The EEZ Studio contains everything you need to quickly create, test and debug attractive and
+responsive GUIs, regardless of the level of complexity, and can meet even the most complex requirements.
