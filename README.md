@@ -82,7 +82,7 @@ We should probably have an on off switch.
 ## libraries
 
 - Teensy Audio Library
-
+- eez studio
 
 ## includes
 
