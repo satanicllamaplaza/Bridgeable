@@ -1,0 +1,19 @@
+{
+  "files": [
+    "actions.h",
+    "fonts.h",
+    "images.c",
+    "images.h",
+    "screens.c",
+    "screens.h",
+    "structs.h",
+    "styles.c",
+    "styles.h",
+    "ui.c",
+    "ui.h",
+    "ui_image_hard_transition_curve.c",
+    "ui_image_medium_transition__curve.c",
+    "ui_image_soft_transition__curv.c",
+    "vars.h"
+  ]
+}

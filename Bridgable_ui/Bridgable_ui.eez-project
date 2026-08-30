@@ -5970,14 +5970,14 @@
                       },
                       "group": "",
                       "groupIndex": 0,
-                      "min": 10000,
+                      "min": 0,
                       "minType": "literal",
-                      "max": 20000,
+                      "max": 100,
                       "maxType": "literal",
                       "mode": "NORMAL",
-                      "value": "Target_frequency",
+                      "value": "wet_dry_percentage",
                       "valueType": "expression",
-                      "previewValue": "15000",
+                      "previewValue": "50",
                       "valueLeft": 0,
                       "valueLeftType": "literal",
                       "previewValueLeft": 0,
@@ -9972,12 +9972,104 @@
       "lvglDither": false
     }
   ],
-  "colors": [],
+  "colors": [
+    {
+      "objID": "f2bf2adb-0b25-4957-fee0-b890bf47bc9e",
+      "name": "dark_brown"
+    },
+    {
+      "objID": "6e12e4f2-39cb-4b2c-d869-369ead94057d",
+      "name": "medium_brown"
+    },
+    {
+      "objID": "9da3a901-5bc0-4120-c632-6e05dfdc8e86",
+      "name": "light_brown"
+    },
+    {
+      "objID": "0bf80bcd-12f5-4a56-e8e5-e823fa466300",
+      "name": "dark_red"
+    },
+    {
+      "objID": "7e4c3b19-bb19-4d54-d588-f1635cf14c05",
+      "name": "light_red"
+    },
+    {
+      "objID": "df75d9a6-2e9b-4e74-9c2a-71e6b0fda24e",
+      "name": "dark_green"
+    },
+    {
+      "objID": "abb15a7a-445b-4785-e511-78f1c1c63723",
+      "name": "light_green"
+    },
+    {
+      "objID": "1db2c925-4f71-4678-a51a-e62a17eb8a2d",
+      "name": "dark_yellow"
+    },
+    {
+      "objID": "fe5fa035-060e-4ca0-adf4-f585d596a63b",
+      "name": "light_yellow"
+    },
+    {
+      "objID": "bfd15dbe-4f7b-48f9-e2dc-ef5fd05eeb9c",
+      "name": "dark_blue"
+    },
+    {
+      "objID": "c84f862d-c993-4bd3-d350-e46d8583009a",
+      "name": "light_blue"
+    },
+    {
+      "objID": "e7603759-f3dc-4725-f526-40eb0f8b74a9",
+      "name": "magenta"
+    },
+    {
+      "objID": "fe8c98d4-accc-49a8-da0c-e963edb6a219",
+      "name": "pink"
+    },
+    {
+      "objID": "356f25e6-9d2b-45bc-d43a-62b4c7420581",
+      "name": "dark_turq"
+    },
+    {
+      "objID": "eb5ab89e-a8b5-4eaf-a96b-8649afc7a5d2",
+      "name": "light_turq"
+    },
+    {
+      "objID": "fc38c48b-af7b-47d5-b449-5360697c8b62",
+      "name": "orange"
+    },
+    {
+      "objID": "6400c541-0b1d-4d1a-be20-5b3708b2bc9f",
+      "name": "light_milk"
+    },
+    {
+      "objID": "facd9859-cd15-4484-b5e0-ace9631d6f22",
+      "name": "dark_milk"
+    }
+  ],
   "themes": [
     {
       "objID": "ed882da1-8496-e314-059f-7473f6a898ba",
-      "name": "Default",
-      "colors": []
+      "name": "gruvwitch",
+      "colors": [
+        "#120e0d",
+        "#3c2e26",
+        "#594535",
+        "#953022",
+        "#b44934",
+        "#98971a",
+        "#b8bb26",
+        "#c09129",
+        "#c8a144",
+        "#486c64",
+        "#70807d",
+        "#935463",
+        "#a37173",
+        "#607c50",
+        "#7a955c",
+        "#be6411",
+        "#cec090",
+        "#c4b686"
+      ]
     }
   ]
 }

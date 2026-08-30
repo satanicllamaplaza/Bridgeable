@@ -76,6 +76,10 @@ For a simpler circuit, an N-channel JFET like the 2SK596 or 2N5457 is an option
 - Design 3d printable case
 - PARTY
 
+# Reference Files From Successful Tests
+- [Line in Mono to Headphone Output](./documentation/reference_codes/Line_in_Mono_to_Headphone_Output.cpp)
+
+
 # Hardware considerations
 
 We should design this board around standard instrument effect pedal concepts. 

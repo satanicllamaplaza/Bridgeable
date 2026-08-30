@@ -1,7 +1,9 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[Bridgable_ui.eez-project]:/userPages/3",
-    "selectedGlobalVariableObject": "[Bridgable_ui.eez-project]:/variables/globalVariables/4",
+    "selectedUserPageObject": "[Bridgable_ui.eez-project]:/userPages/2",
+    "selectedGlobalVariableObject": "[Bridgable_ui.eez-project]:/variables/globalVariables/3",
+    "selectedThemeObject": "[Bridgable_ui.eez-project]:/themes/0",
+    "selectedThemeColorObject": "[Bridgable_ui.eez-project]:/colors/17",
     "subnavigationSelectedItems": {
       "variables-tab/sub-navigation/selected-item": "Global"
     }
@@ -24,7 +26,7 @@
           },
           {
             "type": "border",
-            "selected": 2,
+            "selected": 3,
             "size": 240,
             "location": "right",
             "children": [
@@ -166,8 +168,7 @@
                       "enableClose": false,
                       "icon": "svg:hierarchy"
                     }
-                  ],
-                  "active": true
+                  ]
                 },
                 {
                   "type": "tabset",
@@ -197,26 +198,16 @@
                 {
                   "type": "tab",
                   "id": "#577c5d14-bdb4-429a-9ebe-c25ad25b61e5",
-                  "name": "transition_curve_menu",
+                  "name": "wet_dry_menu",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[Bridgable_ui.eez-project]:/userPages/3",
+                    "objectPath": "[Bridgable_ui.eez-project]:/userPages/2",
                     "permanent": false
                   },
                   "icon": "svg:page"
-                },
-                {
-                  "type": "tab",
-                  "id": "#b8a6deaf-76b7-4d6d-b7c0-88fb1fb3c10b",
-                  "name": "target_frequency_menu",
-                  "component": "editor",
-                  "config": {
-                    "objectPath": "[Bridgable_ui.eez-project]:/userPages/1",
-                    "permanent": true
-                  },
-                  "icon": "svg:page"
                 }
-              ]
+              ],
+              "active": true
             },
             {
               "type": "row",
@@ -902,6 +893,7 @@
                 {
                   "type": "tabset",
                   "id": "#52b2126d-af8b-461d-991c-05d30bc15cfb",
+                  "weight": 100.5973715651135,
                   "enableDrop": false,
                   "enableDrag": false,
                   "enableClose": false,
@@ -918,6 +910,7 @@
                 {
                   "type": "tabset",
                   "id": "#bdfc127b-50d6-4c5f-b615-921cbde123e2",
+                  "weight": 99.4026284348865,
                   "enableDrop": false,
                   "enableDrag": false,
                   "enableClose": false,
@@ -929,7 +922,8 @@
                       "component": "colors",
                       "enableClose": false
                     }
-                  ]
+                  ],
+                  "active": true
                 }
               ]
             }
@@ -1115,7 +1109,10 @@
       "selectionBack": {
         "0": {
           "0": {
-            "0": {}
+            "0": {},
+            "3": {
+              "0": {}
+            }
           }
         }
       },
@@ -1139,10 +1136,7 @@
         "0": {
           "0": {
             "3": {
-              "0": {
-                "$selected": true
-              },
-              "2": {}
+              "$selected": true
             }
           }
         }
@@ -1198,12 +1192,12 @@
   "showComponentDescriptions": true,
   "logsPanelFilter": "all",
   "selectedStylePropertyName": "",
-  "lvglPart": "MAIN",
+  "lvglPart": "SELECTED",
   "lvglState": "DEFAULT",
   "lvglExpandedPropertiesGroup": [
-    "TEXT",
     "POSITION AND SIZE",
-    "IMAGE"
+    "IMAGE",
+    "TEXT"
   ],
   "showInactiveFlowsInDebugger": true,
   "globalFlowZoom": true,
