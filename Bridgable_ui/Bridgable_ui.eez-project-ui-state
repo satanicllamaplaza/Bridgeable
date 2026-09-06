@@ -1,9 +1,9 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[Bridgable_ui.eez-project]:/userPages/2",
+    "selectedUserPageObject": "[Bridgable_ui.eez-project]:/userPages/5",
     "selectedGlobalVariableObject": "[Bridgable_ui.eez-project]:/variables/globalVariables/3",
     "selectedThemeObject": "[Bridgable_ui.eez-project]:/themes/0",
-    "selectedThemeColorObject": "[Bridgable_ui.eez-project]:/colors/17",
+    "selectedThemeColorObject": "[Bridgable_ui.eez-project]:/colors/5",
     "subnavigationSelectedItems": {
       "variables-tab/sub-navigation/selected-item": "Global"
     }
@@ -74,6 +74,8 @@
           },
           {
             "type": "border",
+            "selected": 0,
+            "size": 0,
             "location": "bottom",
             "children": [
               {
@@ -198,10 +200,10 @@
                 {
                   "type": "tab",
                   "id": "#577c5d14-bdb4-429a-9ebe-c25ad25b61e5",
-                  "name": "wet_dry_menu",
+                  "name": "wet_dry_menu_1",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[Bridgable_ui.eez-project]:/userPages/2",
+                    "objectPath": "[Bridgable_ui.eez-project]:/userPages/5",
                     "permanent": false
                   },
                   "icon": "svg:page"
@@ -217,7 +219,7 @@
                 {
                   "type": "tabset",
                   "id": "#18654dd9-9eb0-4b19-a0d9-515606bbf570",
-                  "weight": 2.7670250896057347,
+                  "weight": 1.9147381242387334,
                   "children": [
                     {
                       "type": "tab",
@@ -232,7 +234,7 @@
                 {
                   "type": "tabset",
                   "id": "#99ecc3eb-2ec2-45ab-b50a-9e2e0362ce78",
-                  "weight": 0.23297491039426524,
+                  "weight": 1.0852618757612666,
                   "children": [
                     {
                       "type": "tab",
@@ -1178,6 +1180,29 @@
         "secondToPx": 200,
         "scrollLeft": 0
       }
+    },
+    "[Bridgable_ui.eez-project]:/userPages/5[flow-state]": {
+      "selectionFront": {},
+      "selectionBack": {
+        "0": {
+          "0": {
+            "3": {}
+          }
+        }
+      },
+      "transform": {
+        "translate": {
+          "x": -400,
+          "y": -240
+        },
+        "scale": 2
+      },
+      "timeline": {
+        "isEditorActive": false,
+        "position": 0,
+        "secondToPx": 200,
+        "scrollLeft": 0
+      }
     }
   },
   "activeOutputSection": 0,
@@ -1192,12 +1217,10 @@
   "showComponentDescriptions": true,
   "logsPanelFilter": "all",
   "selectedStylePropertyName": "",
-  "lvglPart": "SELECTED",
+  "lvglPart": "INDICATOR",
   "lvglState": "DEFAULT",
   "lvglExpandedPropertiesGroup": [
-    "POSITION AND SIZE",
-    "IMAGE",
-    "TEXT"
+    "ARC"
   ],
   "showInactiveFlowsInDebugger": true,
   "globalFlowZoom": true,
